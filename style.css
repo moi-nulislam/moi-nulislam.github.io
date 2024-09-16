@@ -94,6 +94,10 @@ button {
     border-radius: 30px;
 }
 
+button:hover {
+    background-color: rgb(21, 20, 20);
+}
+
 button:active {
     color: white;
     border: 1px solid rgba(0, 255, 0, 0.731);
