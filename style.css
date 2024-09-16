@@ -136,10 +136,44 @@ aside a {
     color: rgba(0, 255, 0, 0.8);
 }
 
+.email{
+    font-size: 30px;
+    color: white;
+}
+.email:hover {
+    color: rgba(0, 255, 0, 0.8);
+}
+
 .github {
     font-size: 30px;
     color: white;
 }
 .github:hover {
     color: rgba(0, 255, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: hsl(0, 0%, 11%);
+    padding: 30px;
+}
+
+.foot-logo {
+    text-decoration: none;
+    font-family:monospace;
+    color: rgb(0, 255, 0);
+    font-size: 28px;
+}
+
+.foot-logo:hover {
+    color: rgba(0, 255, 0, 0.811);
 }
