@@ -53,18 +53,22 @@ nav{
     url(img/bangladesh6.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-img {
-    width: 32.6%;
+    width: 300px;
     height: auto;
-    float: left;
+    margin-left: 130px;
+    border-radius: 50%;
 }
 
 .hero-container {
-    text-align: left;
-    margin-top: 150px;
     float: left;
+    text-align: left;
+    margin-top: 80px;
     width: 40%;
     font-size: 30px;
     color: white;
