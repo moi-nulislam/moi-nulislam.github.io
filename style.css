@@ -1,52 +1,99 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0.929)),
-    url(img/bangladesh9.jpg);
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(209, 209, 209, 0.722), rgba(158, 156, 156, 0.929)), url(img/bangladesh2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ::selection {
-    color: green;
-    background: black;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
 }
-nav{
-    background-color: hsl(0, 0%, 11%);
-    padding: 30px;
+nav {
+    background-color: rgba(255, 250, 241, .8);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    color: black;
 }
 
-.nav-logo {
-    text-decoration: none;
-    font-family:monospace;
-    color: rgb(0, 255, 0);
-    font-size: 28px;
-}
 
-.nav-logo:hover {
-    color: rgba(0, 255, 0, 0.811);
-}
 
-.nav-container {
-    /* nothing */
-}
-
-.nav-container  a{
-    text-decoration: none;
+nav a:hover, 
+nav a.active {
     color: white;
-    background-color: hsl(0, 0%, 11%);
-    margin-right: 50px;
-    font-family: cursive;
+    background-color: hsla(0, 0%, 0%, 0.591);
+
 }
 
-.nav-container a:hover {
-    color: rgb(0, 255, 0);
-    padding-bottom: 5px;
-    border-bottom: 2px solid rgb(0, 255, 0);
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
 }
 
 
@@ -54,10 +101,11 @@ nav{
 /* HERO */
 .hero {
     width: 100%;
-    height: 88vh;
+    height: 100vh;
 }
 
 .hero-img {
+    filter: brightness(80%);
     float: left;
     margin-top: 80px;
     margin-right: 30px;
@@ -73,26 +121,26 @@ nav{
     margin-top: 80px;
     width: 40%;
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .hero-container p {
     display: inline;
     font-size: 60px;
-    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
 }
 
 #description {
     font-size: 14px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1px;
     margin-top: 15px;
 }
 
 button {
     font-family: cursive;
-    color: rgb(0, 255, 0);
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: #FFFAF1;
     font-size: 25px;
     margin-top: 20px;
     padding: 5px 15px 5px 15px;
@@ -101,12 +149,13 @@ button {
 }
 
 button:hover {
-    background-color: rgb(21, 20, 20);
+    background-color: white;
 }
 
 button:active {
-    color: white;
-    border: 1px solid rgba(0, 255, 0, 0.731);
+    color: black;
+    background-color: #FFFAF1;
+    border: 2px solid black;
 
 }
 
@@ -124,42 +173,42 @@ aside a {
 
 .fb {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .fb:hover {
-    color: rgba(0, 255, 0, 0.8);
+    color: #316FF6;
 }
 
 .twitter {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .twitter:hover {
-    color: rgba(0, 255, 0, 0.8);
+    color: #1DA1F2;
 }
 
 .linked-in {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .linked-in:hover {
-    color: rgba(0, 255, 0, 0.8);
+    color: #0077B5;
 }
 
 .email{
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .email:hover {
-    color: rgba(0, 255, 0, 0.8);
+    color: #cc222850;
 }
 
 .github {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .github:hover {
-    color: rgba(0, 255, 0, 0.8);
+    color:  #333;
 }
 
 
