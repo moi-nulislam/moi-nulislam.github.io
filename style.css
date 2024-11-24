@@ -20,6 +20,7 @@ nav {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 nav ul {
     width: 100%;
     list-style: none;
@@ -47,7 +48,14 @@ nav a:hover,
 nav a.active {
     color: white;
     background-color: hsla(0, 0%, 0%, 0.591);
-
+}
+#nav-logo img{
+    height: 3em;
+    border-radius: 50%;
+}
+#nav-logo:hover {
+    filter: brightness(80%) !important;
+    background-color: transparent !important;
 }
 
 nav li:first-child {

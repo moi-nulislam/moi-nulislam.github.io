@@ -46,7 +46,15 @@ nav a:hover,
 nav a.active {
     color: white;
     background-color: hsla(0, 0%, 0%, 0.591);
+}
 
+#nav-logo img{
+    height: 3em;
+    border-radius: 50%;
+}
+#nav-logo:hover {
+    filter: brightness(80%) !important;
+    background-color: transparent !important;
 }
 
 nav li:first-child {
