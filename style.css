@@ -115,18 +115,18 @@ nav li:first-child {
 .hero-img {
     filter: brightness(80%);
     float: left;
-    margin-top: 80px;
-    margin-right: 30px;
-    width: 300px;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    width: 19rem;
     height: auto;
-    margin-left: 130px;
+    margin-left: 10rem;
     border-radius: 50%;
 }
 
 .hero-container {
     float: left;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 5rem;
     width: 40%;
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -134,7 +134,6 @@ nav li:first-child {
 
 .hero-container p {
     display: inline;
-    font-size: 60px;
     color: rgb(0, 0, 0);
 }
 
@@ -145,11 +144,13 @@ nav li:first-child {
     margin-top: 15px;
 }
 
+
+
 button {
     font-family: cursive;
     color: rgb(0, 0, 0);
     background-color: #FFFAF1;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     padding: 5px 15px 5px 15px;
     border: 1px solid white;
@@ -164,15 +165,15 @@ button:active {
     color: black;
     background-color: #FFFAF1;
     border: 2px solid black;
-
 }
 
 aside {
     float: right;
-    margin-right: 20px;
-    margin-top: 200px;
+    margin-right: 1rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
+    z-index: 999;
 }
 
 aside a {
@@ -185,6 +186,8 @@ aside a {
 }
 .fb:hover {
     color: #316FF6;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
 }
 
 .twitter {
@@ -192,7 +195,9 @@ aside a {
     color: rgb(0, 0, 0);
 }
 .twitter:hover {
-    color: #1DA1F2;
+    color: white;
+    background-color: black;
+    border-radius: 20%;
 }
 
 .linked-in {
@@ -208,7 +213,7 @@ aside a {
     color: rgb(0, 0, 0);
 }
 .email:hover {
-    color: #cc222850;
+    color: #fd242bbf;
 }
 
 .github {
@@ -216,10 +221,57 @@ aside a {
     color: rgb(0, 0, 0);
 }
 .github:hover {
-    color:  #333;
+    color:  #ffffff;
+    background-color: black;
+    border-radius: 50%;
 }
 
 
+
+@media(max-width: 920px) {
+    .hero-img {
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 0;
+        float: left;
+        border-radius: 0;
+    }
+    .hero-container {
+        width: 80vw;
+        margin-left: 1rem;
+    }
+    button {
+        font-size: 10px;
+    }
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 400px) {
+    .hero-img {
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 0;
+        float: left;
+        border-radius: 0;
+    }
+    .hero-container {
+        width: 80vw;
+        margin-left: 1rem;
+    }
+    button {
+        font-size: 10px;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+    }
+    aside a {
+        margin-right: 10px;
+    }
+}
 
 
 
