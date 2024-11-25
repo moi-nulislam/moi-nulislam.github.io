@@ -145,28 +145,6 @@ nav li:first-child {
 }
 
 
-
-button {
-    font-family: cursive;
-    color: rgb(0, 0, 0);
-    background-color: #FFFAF1;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 5px 15px 5px 15px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-
-button:hover {
-    background-color: white;
-}
-
-button:active {
-    color: black;
-    background-color: #FFFAF1;
-    border: 2px solid black;
-}
-
 aside {
     float: right;
     margin-right: 1rem;
@@ -240,9 +218,6 @@ aside a {
         width: 80vw;
         margin-left: 1rem;
     }
-    button {
-        font-size: 10px;
-    }
     aside {
         display: flex;
         flex-wrap: wrap;
@@ -260,9 +235,6 @@ aside a {
     .hero-container {
         width: 80vw;
         margin-left: 1rem;
-    }
-    button {
-        font-size: 10px;
     }
     aside {
         display: flex;
