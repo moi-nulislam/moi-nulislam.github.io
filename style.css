@@ -153,6 +153,7 @@ aside {
     display: flex;
     flex-direction: column;
     z-index: 999;
+
 }
 
 aside a {
@@ -162,6 +163,7 @@ aside a {
 .fb {
     font-size: 30px;
     color: rgb(0, 0, 0);
+    transition: all .16s ease-in 0s;
 }
 .fb:hover {
     color: #316FF6;
@@ -172,6 +174,7 @@ aside a {
 .twitter {
     font-size: 30px;
     color: rgb(0, 0, 0);
+    transition: all .16s ease-in 0s;
 }
 .twitter:hover {
     color: white;
@@ -182,6 +185,7 @@ aside a {
 .linked-in {
     font-size: 30px;
     color: rgb(0, 0, 0);
+    transition: all .16s ease-in 0s;
 }
 .linked-in:hover {
     color: #0077B5;
@@ -190,6 +194,7 @@ aside a {
 .email{
     font-size: 30px;
     color: rgb(0, 0, 0);
+    transition: all .16s ease-in 0s;
 }
 .email:hover {
     color: #fd242bbf;
@@ -198,11 +203,12 @@ aside a {
 .github {
     font-size: 30px;
     color: rgb(0, 0, 0);
+    transition: all .16s ease-in 0s;
 }
 .github:hover {
     color:  #ffffff;
-    background-color: black;
     border-radius: 50%;
+    background-color: black;
 }
 
 
