@@ -102,3 +102,26 @@ nav li:first-child {
         width: 100%;
     }
 }
+
+
+.naat{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    
+}
+pre {
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 0px ;
+    
+}
+
+.naat p {
+    font-family: cursive;
+    font-size: 100px;
+    padding-right: 400px;
+}
